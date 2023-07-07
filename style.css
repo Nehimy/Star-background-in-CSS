@@ -3,9 +3,54 @@
    del cálculo del ancho de la caja.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Cherry+Bomb+One&family=Righteous&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+body {
+    background: rgb(143,0,187);
+   background: radial-gradient(circle, rgb(127, 7, 164) 0%, rgb(76, 0, 123) 30%, rgba(22,0,64,1) 70%);
+   height: 100vh;
+   display: grid;
+   place-content: center;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Righteous', cursive;
+}
+
+.star-1 {
+    width: 5px;
+    height: 5px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: moving-star 15s linear infinite;
+    position: absolute;
+    top: -1px;
+}
+
+
+@keyframes moving-star {
+    0% {
+        /* transform: translateY(0px); */
+        /* transform: translateY( -1px); */
+        transform: translate(150px, -1px);
+    }
+
+    50%{
+        transform: translate(75px, 500px);
+    }
+    100% {
+        transform: translate(150px, 1000px);
+        /* transform: translateY(-2000px); */
+    }
+}
