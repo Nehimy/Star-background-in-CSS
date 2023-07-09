@@ -1,0 +1,7 @@
+
+*  To do list
+Cada div tiene que tener una clase con diferente numeración.
+Cada div tiene que tener una posicción diferente.
+Cambiar la distancia en la cual aprecen los puntos.
+Crear 2 o 3 movimientos en vertical o retardarlos.
+Generar puntos con difetentes tamaños.
