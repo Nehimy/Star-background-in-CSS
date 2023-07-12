@@ -28,11 +28,11 @@ function createStars() {
     }
     booleano = false;
   }else {
-    for (var i = 1; i <= 710; i++) {
+    for (var i = 1; i <= 700; i++) {
       star = document.createElement('div');
       dimension = Math.floor(Math.random() * (2.6 - 0.5 + 1) ) + 0.3;
 
-      positionX = Math.floor(Math.random() * (-160 - 30 + 1) ) + 30;
+      positionX = Math.floor(Math.random() * (-150 - 100 + 1) ) + 100;
       positionY = Math.floor(Math.random() * (100 - 0.2 + 1) ) + 0.5;
 
       star.style.left=  positionX + 'vw';
@@ -51,8 +51,8 @@ function createStars() {
 
   setTimeout(function(){
     stars.forEach(s => s.remove());
-  },34000)
+  },25000)
 }
 
-setInterval(createStars, 4000)
+setInterval(createStars, 6000)
 createStars()
