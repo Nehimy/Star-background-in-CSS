@@ -11,13 +11,17 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    position: fixed;
     background: rgb(143,0,187);
-   background: radial-gradient(circle, rgb(127, 7, 164) 0%, rgb(76, 0, 123) 30%, rgba(22,0,64,1) 70%);
-   height: 100vh;
-   display: grid;
-   place-content: center;
+    background: radial-gradient(circle, rgb(127, 7, 164) 0%, rgb(76, 0, 123) 30%, rgba(22,0,64,1) 70%);
+
 }
+
 
 h1 {
     color:white;
@@ -27,79 +31,44 @@ h1 {
     font-family: 'Righteous', cursive;
 }
 
-.star-1,
-.star-2,
-.star-3,
-.star-4,
-.star-5,
-.star-6,
-.star-7,
-.star-8,
-.star-9,
-.star-10,
-.star-11,
-.star-12,
-.star-13,
-.star-14,
-.star-15,
-.star-16,
-.star-17,
-.star-18,
-.star-19,
-.star-20,
-.star-21,
-.star-22,
-.star-23,
-.star-24,
-.star-25,
-.star-26,
-.star-27,
-.star-28,
-.star-29,
-.star-30,
-.star-31,
-.star-32,
-.star-33,
-.star-34,
-.star-35,
-.star-36,
-.star-37,
-.star-38,
-.star-39,
-.star-40,
-.star-51,
-.star-52,
-.star-53,
-.star-54,
-.star-55,
-.star-56,
-.star-57,
-.star-58,
-.star-59,
-.star-60 {
+.star {
     width: 5px;
     height: 5px;
     background: white;
     opacity: 0.5;
     border-radius: 50%;
-    animation: moving-star 15s linear infinite;
+    animation: moving-starX 150s linear infinite;
     position: absolute;
-    top: -1px;
+    /* top: -1px; */
 }
 
 
-@keyframes moving-star {
+/* @keyframes moving-starY { */
+/*     0% { */
+/*         transform: translate(-60px, -1px); */
+/*     } */
+
+    /* 50%{ */
+    /*     transform: translate(150px, 500px); */
+    /* } */
+
+/*     100% { */
+/*         transform: translate(30px, 1000px); */
+/*     } */
+/* } */
+
+@keyframes moving-starX {
     0% {
         /* transform: translateY(0px); */
-        /* transform: translateY( -1px); */
-        transform: translate(-60px, -1px);
+        transform: translate(0px, 0px);
     }
 
-    50%{
-        transform: translate(150px, 500px);
-    }
+    /* 50%{ */
+    /*     transform: translate(150px, 500px); */
+    /* } */
+
     100% {
-        transform: translate(30px, 800px);
+        transform: translate(4000px, -30px);
         /* transform: translateY(-2000px); */
     }
 }

@@ -1,22 +1,58 @@
 // document.querySelector("body").appendChild(document.createElement('div')).className ='star';
-let positionX, positionY;
-let dimension=0;
-let star;
-for (var i = 1; i <= 60; i++) {
-  star = document.createElement('div');
-  // document.querySelector("body").appendChild(document.createElement('div')).classList.add('star'+i);
-  dimension = Math.floor(Math.random() * (3 - 0.5 + 1) ) + 0.5;
+// document.querySelector("body").appendChild(document.createElement('div')).classList.add('star'+i);
+let booleano = true;
+function createStars() {
+  let positionX, positionY;
+  let dimension = 0;
+  let star;
+  let stars = [];
 
-  positionX = Math.floor(Math.random() * (1100 - 0.5 + 1) ) + 0.5;
-  positionY = Math.floor(Math.random() * (800 - 0.2 + 1) ) + 0.5;
+  if (booleano){
+    for (var i = 1; i <= 710; i++) {
+      star = document.createElement('div');
 
-  star.style.width = dimension + 'px';
-  star.style.height = dimension + 'px';
+      dimension = Math.floor(Math.random() * (2.6 - 0.5 + 1) ) + 0.3;
+
+      positionX = Math.floor(Math.random() * (100 - 0 + 1) ) + 0;
+      positionY = Math.floor(Math.random() * (100 - 0.2 + 1) ) + 0.5;
+
+      star.style.left=  positionX + 'vw';
+      star.style.top= positionY + 'vh';
+
+      star.style.width = dimension + 'px';
+      star.style.height = dimension + 'px';
+
+      star.classList.add('star');
+      document.querySelector('.container').appendChild(star);
+      stars[i] = star;
+    }
+    booleano = false;
+  }else {
+    for (var i = 1; i <= 710; i++) {
+      star = document.createElement('div');
+      dimension = Math.floor(Math.random() * (2.6 - 0.5 + 1) ) + 0.3;
+
+      positionX = Math.floor(Math.random() * (-160 - 30 + 1) ) + 30;
+      positionY = Math.floor(Math.random() * (100 - 0.2 + 1) ) + 0.5;
+
+      star.style.left=  positionX + 'vw';
+      star.style.top= positionY + 'vh';
+
+      star.style.width = dimension + 'px';
+      star.style.height = dimension + 'px';
+
+      star.classList.add('star');
+      document.querySelector('.container').appendChild(star);
+      stars[i] = star;
+    }
+
+  }
 
 
-  star.style.left= positionX + 'px';
-  star.style.top= positionY + 'px';
-
-  star.classList.add('star-'+i);
-  document.querySelector('body').appendChild(star);
+  setTimeout(function(){
+    stars.forEach(s => s.remove());
+  },34000)
 }
+
+setInterval(createStars, 4000)
+createStars()
