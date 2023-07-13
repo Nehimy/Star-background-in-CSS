@@ -54,5 +54,5 @@ function createStars() {
   },25000)
 }
 
-// setInterval(createStars, 6000)
+setInterval(createStars, 5000)
 createStars()

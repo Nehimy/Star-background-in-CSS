@@ -72,9 +72,9 @@ h1 {
     background: white;
     opacity: 0.5;
     border-radius: 50%;
-    /* animation: moving-starX 130s linear infinite; */
+    animation: moving-starX 130s linear infinite;
     position: absolute;
-    /* top: -1px; */
+
 }
 
 
