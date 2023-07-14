@@ -23,4 +23,4 @@ blur(1.17rem)  Desenfoque con 1.17rem de radio*/
 - Generar puntos con difetentes tamaños.
 
 * Vídeo  sobre la animación
-[[https://i.imgur.com/iE6uErG.png][https://www.youtube.com/watch?v=3iWRbSkUfes]]
+[[https://www.youtube.com/watch?v=3iWRbSkUfes][https://i.imgur.com/iE6uErG.png]]
