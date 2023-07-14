@@ -1,7 +1,26 @@
+* Star background in CSS
+La idea era hacer una especie de cielo estrellado que vi en una web.
 
+Intente replicar la animación con aquello que yo conosco.
+=Nota:= Una cosa muy sencilla que aprendí fue blur en css (si no sabia como difuminar un elemento xD).
+
+#+begin_src css
+
+filter: blur(0);
+
+/*blur(0)        Sin efecto
+blur(8px)      Desenfoque con 8px de radio
+blur(1.17rem)  Desenfoque con 1.17rem de radio*/
+
+#+end_src
 *  To do list
-Cada div tiene que tener una clase con diferente numeración.
-Cada div tiene que tener una posicción diferente.
-Cambiar la distancia en la cual aprecen los puntos.
-Crear 2 o 3 movimientos en vertical o retardarlos.
-Generar puntos con difetentes tamaños.
+** Aquí anote algunas cosas pendientes por programar
+
+- Cada div tiene que tener una clase con diferente numeración.
+- Cada div tiene que tener una posicción diferente.
+- Cambiar la distancia en la cual aprecen los puntos.
+- Crear 2 o 3 movimientos en vertical o retardarlos.
+- Generar puntos con difetentes tamaños.
+
+* Vídeo  sobre la animación
+[[https://i.imgur.com/iE6uErG.png][https://discord.com/channels/187222456111595521/187222456111595521/1129090835242307644]]
